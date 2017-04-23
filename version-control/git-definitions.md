@@ -16,3 +16,5 @@ Commit is when you are setting the changes into the branch. A good commit messag
 * What is a merge conflict?
 
 Merge conflicts can occur when two or more users are trying to modify the same file in the same line or someone has deleted the file and the other coder is trying to make changes.
+
+#Making a change to the git-definitions.md for release 2!
