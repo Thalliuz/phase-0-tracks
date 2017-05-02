@@ -1,0 +1,32 @@
+#contact-info{ font-size: .8em}
+
+ .practice{
+      font-size: .8em;
+      color: grey !important;
+
+ }
+
+.job{ background-color: #e9e5dc;
+      border-radius: 6px;
+      padding-bottom: 2%;}
+
+.practice{ font-size: .8em;
+      color: red;
+    } 
+
+ ul>li::first-letter {  color: blue; 
+ 
+ }  
+ 
+ p + p {   color: green; 
+ 
+ }  
+ 
+ h3 + ul {  color: green; 
+ 
+ } 
+ /* .practice has more weight*/  
+ 
+ h2 + p {  font-style: italic; 
+ 
+ }
