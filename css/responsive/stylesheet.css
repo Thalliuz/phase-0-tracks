@@ -5,10 +5,10 @@
   margin: 0px auto;
   padding: 0px;
   border:0;
-  width: 960px;
+  max-width: 960px;
   background: url("http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg") repeat;
   color:black;
-  font-size: 2em;
+  font-size: 2em; 
 }
 
 #side-a ul{
@@ -27,7 +27,7 @@ a {
 
 #side-a {
   float: left;
-  width: 150px;
+    width: 150px;
 }
 
 #side-a li{
@@ -47,4 +47,49 @@ a {
 #footer {
   clear: both;
   background: #A2A2A2;
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        width: 100%;}
+    p { 
+        font-size: 20px;
+        text-align: center;}
+    #side-a {
+        font-size: 24px;      
+    }
+}
+@media screen and (max-width: 500px) {
+    #header {
+        position: fixed;
+        top: 0px;
+        right 0px;
+        text-align: center;  
+    }
+    #side-a {
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        font-size: 20px;
+        background-color: white;
+        border-bottom: 1px solid black;    
+    }
+    li {
+        text-align: center;
+        display: inline;
+        padding-right: 20px;
+        padding-left: 20px;
+        }
+    #content { 
+        width: 100%;
+        margin-top: 150px; }
+}
+@media screen and (max-width: 400px) {
+    #side-a li { 
+        padding: 10px; 
+    }
+}
+
+a:link {
+     text-decoration: none;
 }
