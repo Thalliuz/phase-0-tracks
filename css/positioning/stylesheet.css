@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+
+}
+
+.container { 
+  background-color: red;
+  width: 100%;
+
+
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.octopus img {
+  margin-top: -105px;
+  margin-left: -144px; 
+
+}
+
+.glasses img {
+   margin-top: -6px;
+   margin-left: -102px; 
+}
+
+.hat img {
+   margin-top: -200px;
+   margin-left: -160px;
+}
