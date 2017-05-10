@@ -1,0 +1,25 @@
+——————————————————————————————————————NEW ROBOT!——————————————————————————————————————————
+
+- The robot should decide whether it would like to go up or down.
+	- for up press the button positioned angled up and for down chose the button        	angled lower.
+- Once the direction choice has been decided the robot should wait for the doors to open.
+- When the doors open walk in a straight line into the elevator and once it makes its way to (wall A) it can turn 180 degrees.
+- Now the robot should turn 90 degrees to the left and walk until it makes it’s way to ( wall B).
+- Now that the robot is at wall B turn 90 degrees to your left and walk until you make it to (wall C).
+- Check wall C if it has numbered buttons.
+	- if wall C has numbered buttons stay.
+	- if the robot wants a higher number floor than the median then start searching 	from the highest number and subtract by 1 until the floor desired has been 		reached.
+	- if the floor number is lower than the median then start searching from number 	one and add 1 each time until the desired floor number is reached.
+	- if the floor is the median then choose that floor.
+- if wall C does not have numbered buttons turn to the left 90 degrees and walk   	until you make it to (wall D)
+- Turn right 90 degrees and check (wall E) to see if it has numbered buttons.
+	- if wall D has numbered buttons stay.
+	- if the robot wants a higher number floor than the median then start searching 	from the highest number and subtract by 1 until the floor desired has been 		reached.
+	- if the floor number is lower than the median then start searching from number 	one and add 1 each time until the desired floor number is reached.
+	- if the floor is the median then choose that floor.
+- Once the floor is selected wait for the elevator to reach the floor desired.
+	- Wait for the doors to open.
+	- When the doors open turn 90 degrees move forward 2 feet 
+	- turn 90 degrees to the right and exit the elevator ( move 5 feet forward).
+
+	
