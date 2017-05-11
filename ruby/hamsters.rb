@@ -16,3 +16,8 @@ age = gets.chomp.to_i
 if age == 0 
   age = nil
 end 
+puts "Hamster's Name: #{hamster_name}"
+puts "Hamster Volume: #{hamster_volume}"
+puts "Hamster's Fur Color: #{fur_color}"
+puts "Hamster Adoption Fit: #{adoption_fit}"
+puts "Hamster's Age: #{age}"
