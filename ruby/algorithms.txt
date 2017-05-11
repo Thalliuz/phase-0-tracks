@@ -1,21 +1,27 @@
 ——————————————————————————————————————NEW ROBOT!——————————————————————————————————————————
 
 - The robot should decide whether it would like to go up or down.
-	- for up press the button positioned angled up and for down chose the button        	angled lower.
+	- for up press the button positioned angled up and for down chose the button angled lower.
 - Once the direction choice has been decided the robot should wait for the doors to open.
 - When the doors open walk in a straight line into the elevator and once it makes its way to (wall A) it can turn 180 degrees.
 - Now the robot should turn 90 degrees to the left and walk until it makes it’s way to ( wall B).
 - Now that the robot is at wall B turn 90 degrees to your left and walk until you make it to (wall C).
 - Check wall C if it has numbered buttons.
 	- if wall C has numbered buttons stay.
-	- if the robot wants a higher number floor than the median then start searching 	from the highest number and subtract by 1 until the floor desired has been 		reached.
-	- if the floor number is lower than the median then start searching from number 	one and add 1 each time until the desired floor number is reached.
+	- if the robot wants a higher number floor than the median then 
+	  start searching from the highest number and subtract by 1 until 
+	  the floor desired has been reached.
+	- if the floor number is lower than the median then start searching 
+	  from number one and add 1 each time until the desired floor number is reached.
 	- if the floor is the median then choose that floor.
-- if wall C does not have numbered buttons turn to the left 90 degrees and walk   	until you make it to (wall D)
+- if wall C does not have numbered buttons turn to the left 90 degrees and walk 
+  until you make it to (wall D)
 - Turn right 90 degrees and check (wall E) to see if it has numbered buttons.
 	- if wall D has numbered buttons stay.
-	- if the robot wants a higher number floor than the median then start searching 	from the highest number and subtract by 1 until the floor desired has been 		reached.
-	- if the floor number is lower than the median then start searching from number 	one and add 1 each time until the desired floor number is reached.
+	- if the robot wants a higher number floor than the median then start searching 
+	  from the highest number and subtract by 1 until the floor desired has been reached.
+	- if the floor number is lower than the median then start searching from number 
+	  one and add 1 each time until the desired floor number is reached.
 	- if the floor is the median then choose that floor.
 - Once the floor is selected wait for the elevator to reach the floor desired.
 	- Wait for the doors to open.
@@ -33,22 +39,22 @@
 	- reach to the door knob and grip the door knob.
 	- check if the door knob is locked by turning it. 
 	- if door knob doesn’t turn, move luck on knob from up and down to left and right.
-	- if door is unlocked grip door knob and turn it until and cannot be turned any 	further.
+	- if door is unlocked grip door knob and turn it until and cannot be turned any further.
 	- pull door towards you until enough space is made for you to exit the room.
 - Once you are out of the room you want to make it to the shower.
 	- walk forward until you make contact with wall E 
 	- turn 90 deegrees left and walk forward until you make contact with wall F
 	- turn right 90 degrees take three steps backward 
-	- reach out and grip towel closet door knob turn door knob until it cannot be 		turned anymore
+	- reach out and grip towel closet door knob turn door knob until it cannot be turned anymore
 	- pull towel closet door towards yourself once open grab a towel and a wash cloth
-	- place towel and wash cloth in one hand and with the other push towel closet door 	closed
+	- place towel and wash cloth in one hand and with the other push towel closet door closed
 	- turn 90 degrees and walk forward 1/3 of the way down the wall F then stop 
 	- turn 90 degrees to the right take three steps backward.
 	- reach to the door knob and grip the door knob.
 	- check if the door knob is locked by turning it. 
 	- if door knob is locked call out “is anyone in there?” 
 	- if reply is “yes” wait for person to leave and then enter
-	- if door is unlocked, grip door knob and turn it until and cannot be turned any 	further.
+	- if door is unlocked, grip door knob and turn it until and cannot be turned any further.
 	- pull door towards you until enough space is made for you to enter the bathroom.
 	- walk forward until you have made contact with the sink
 	- place towel on sink keep wash cloth in hand
@@ -57,25 +63,26 @@
 	- reach for the shower knob and turn water heat level to middle option
 	- lift right leg and pivot 15 degrees left and place left leg down in shower 
 	- lift right leg and pivot 15 degrees right and place down leg down in the shower
-	- turn 180 degrees and reach left for the shower certain and pull it to the right 	and till closed
+	- turn 180 degrees and reach left for the shower certain and pull it to the right and till closed
 	- turn left 90 degrees and walk forward until you make contact with wall G
 	- reach up and grip soap bar with right hand
-	- turn 180 degrees and reach out with wash cloth and soap rub them together in the 	water
+	- turn 180 degrees and reach out with wash cloth and soap rub them together in the water
 	- once the wash cloth has soap on it pull it away from the water
 	- apply soap from wash cloth to face, and everything below the head
 	- once that is done turn 180 degrees and place soap back where retrieved
 	- once soap is turned reach up with both hands
 	- with right hand close fingers together hold under shampoo spout 
 	- with left hand push down on shampoo lid 4 times
-	- turn 180 degrees and bend head forward and allow water to be applied to hair for 	15 seconds
-	- after 15 seconds bend head back up and apply shampoo from right hand and mix 		with hair with left and right hand for 20 seconds 
+	- turn 180 degrees and bend head forward and allow water to be applied to hair for 15 seconds
+	- after 15 seconds bend head back up and apply shampoo from right hand and mix 
+	  with hair with left and right hand for 20 seconds 
 	- after 20 seconds walk forward 2 steps
 	- rub entire body to rise off until all soap and shampoo is removed
-	- once all soap and shampoo is removed reach for the shower knob all the way to 	the right
+	- once all soap and shampoo is removed reach for the shower knob all the way to the right
 	- turn left 90 degrees and pull shower curtain left until opened 
 	- lift right leg and pivot 15 degrees left and place left leg down in shower 
 	- lift right leg and pivot 15 degrees right and place down leg down in the shower
-	- turn 180 degrees and reach out for the shower certain and pull it left until 		closed
+	- turn 180 degrees and reach out for the shower certain and pull it left until closed
 	- turn 180 degrees and take two steps forward
 	- turn 90 degrees right and grip towel 
 	- rub towel over 100% of your body until dry
