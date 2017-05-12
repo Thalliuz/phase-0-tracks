@@ -11,10 +11,12 @@ puts "Is the hamster good for adoption (yes/no)? "
 adoption_fit = gets.chomp
 
 puts "How old is the hamster?"
-age = gets.chomp.to_i 
+age = gets.chomp
 
-if age == 0 
+if age == ""
   age = nil
+else
+  age = age.to_i
 end 
 puts "Hamster's Name: #{hamster_name}"
 puts "Hamster Volume: #{hamster_volume}"
