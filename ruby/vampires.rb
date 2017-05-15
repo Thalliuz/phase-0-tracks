@@ -1,5 +1,5 @@
 puts "What is your name?"
-name = gets.chomp.capitalize
+name = gets.chomp.downcase
 
 puts "How old are you??"
 age = gets.chomp.to_i
@@ -9,14 +9,11 @@ year_born = gets.chomp.to_i
 
 life_age = year_born + age
 
-if life_age == 2016
+if life_age == 2016 || life_age == 2017
   life_age = true
-else life_age = false
+  else life_age = false
 end 
     
-
-
-
 garlic_bread = nil
 
 until garlic_bread == true || garlic_bread == false
@@ -31,28 +28,36 @@ until garlic_bread == true || garlic_bread == false
   end 
 end
 
-until insurance == true || false 
+insurance = nil
+
+until insurance == true ||insurance == false 
 puts "Would you like to enroll in the company’s health insurance? (yes/no?)"
-  insurance = gets.chomp.downcase
-if insurance == "yes"
-  insurance = true
-elsif insurance == "no"
-  insurance = false
-else 
+    insurance = gets.chomp.downcase
+  if insurance == "yes"
+    insurance = true
+  elsif insurance == "no"
+    insurance = false
+  else 
     puts "Invalid answer #{insurance}"
   end 
 end
 
+
+
+if name == "Drake Cula".downcase || @name == "Tu Fang".downcase
+    puts "Definitely a Vampire."
+  elsif life_age == false && (garlic_bread == false && insurance == false)
+    puts "Almost certainly a Vampire."
+  elsif life_age == false && (garlic_bread == false || insurance == false)
+    puts "Probably a Vampire."
+  elsif life_age == true && (garlic_bread == true || insurance == true)
+    puts "Probably not a Vampire."
+  else
+    puts "Results inconclusive."
+  end 
+
+
     
-
-
-
-
-
-
-
-
-
 
 
 
