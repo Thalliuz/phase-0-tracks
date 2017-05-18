@@ -60,3 +60,23 @@ super_heros.map do |superhero, secretid|
   super_heros[superhero] = secretid
 end
 print super_heros
+
+
+# delete_if on an array
+
+number = [100,90,80,70,60,50,40,30,20,10]
+
+number.delete_if { |num| num > 50 } 
+
+print number
+
+animals = {"dog" => 6, "cat" => 4, "sloth" => 800}
+
+animals.delete_if { |name, amount| name != "sloth" }
+
+puts animals 
+
+
+
+
+
