@@ -62,7 +62,7 @@ end
 print super_heros
 
 
-# delete_if on an array
+# delete_if on an array and hash
 
 number = [100,90,80,70,60,50,40,30,20,10]
 
@@ -76,7 +76,57 @@ animals.delete_if { |name, amount| name != "sloth" }
 
 puts animals 
 
+puts "---------------------------------------------"
+
+# keep_if on an array and hash
+
+number.keep_if { |num| num == 50}
+
+print number
+
+animals.keep_if { |name, amount| amount >= 100}
+
+print animals
+
+puts "-------------------------------------------"
+
+
+number = [100,90,80,70,60,50,40,30,20,10]
+
+number.select! { |num| num < 50 }
+
+print number
+
+
+animals = {"dog" => 6, "cat" => 4, "sloth" => 800}
+
+animals.select! {|name, amount| name != "sloth"}
+
+puts animals
+
+
+puts "-------------------------------------------"
+
+
+number = [100,90,80,70,60,50,40,30,20,10]
+
+ 
+print number.reverse.drop_while { |num| num < 70}
+
+
+animals = {"dog" => 6, "cat" => 4, "sloth" => 800}
+
+animals.each do |name, value|
+
+  if name != "sloth"
+    animals.delete(name) 
+  end 
+end 
+
+p animals
 
 
 
+animals = {"dog" => 6, "cat" => 4, "sloth" => 800}
 
+animals.each do |name, value|
