@@ -124,9 +124,3 @@ animals.each do |name, value|
 end 
 
 p animals
-
-
-
-animals = {"dog" => 6, "cat" => 4, "sloth" => 800}
-
-animals.each do |name, value|
