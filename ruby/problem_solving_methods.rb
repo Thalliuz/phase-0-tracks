@@ -1,18 +1,18 @@
-array = [10, 20, 9, 14, 22]
-
-
-def array_search( arr, num )
-  index = 0 
-  ran_num = nil
-
-  arr.each do | array_index |
-    if num == array_index
-      ran_num = index
-    end 
-  index += 1
-  end 
-  return ran_num
-end 
+#array = [10, 20, 9, 14, 22]
+#
+#
+#def array_search( arr, num )
+#  index = 0 
+#  ran_num = nil
+#
+#  arr.each do | array_index |
+#    if num == array_index
+#      ran_num = index
+#    end 
+#  index += 1
+#  end 
+#  return ran_num
+#end 
 
 #TEST
 #puts array_search( array, 22 )
@@ -42,8 +42,4 @@ def fibonacci( num )
 return array 
 end 
 
-#TEST
-
-
-
-
+fibonacci(100)
