@@ -18,7 +18,6 @@ def grocery_list(items)
   item_array = items.split(" ")
   food_list = {}
   
-
   item_array.each do |fooditem|
     food_list[fooditem] = 2
   end
@@ -44,6 +43,7 @@ def add_item(list, item, quantity)
   list
 
 end
+
 
 master_list = add_item(master_list, "Lemonade", 2)
 master_list = add_item(master_list, "Tomatoes", 3)
@@ -88,3 +88,24 @@ end
 
 prettify_list(master_list)
 
+
+#      REFLECTION
+
+#What did you learn about pseudocode from working on this #challenge?
+# I lerned how to better write out what I need to do in pseudocode before working on the problem.
+
+#What are the tradeoffs of using arrays and hashes for this #challenge?
+# For this challenege I believe it was a better idea to use a Hash so that it would be able to hold the key value pair to have a key of the item and a value of the quantity of the item. If we would have used an array to hold it all we would have multiple items and to get the quantity of he items we would have to do more to get the answer for that.
+
+#What does a method return?
+# methods return a value 
+
+#What kind of things can you pass into methods as arguments?
+# you can pass in any data structure any value. Really any object. 
+
+#How can you pass information between methods?
+# by saving the return value into a new variable and running it through the method. Also you could use global variables. 
+
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+# Solidified for me was the whole saving the return value into a new variable and using that in the rest of the situation. 
+# Overall I don't feel too confused anymore I feel like after workng with the pair and the GPS Guide I have a much better grasp on this.  
