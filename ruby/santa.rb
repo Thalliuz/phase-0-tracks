@@ -72,7 +72,7 @@ class Santa
   
 end
 
-# -------Driver Code---------
+# -------TEST CODE---------
 santas = []
 gender = ["Agender", "Androgyne", "Androgynous", "Bigender"]
 ethnicity = ["white", "black", "latino", "japanese", "n/a"]
