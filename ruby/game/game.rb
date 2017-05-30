@@ -1,111 +1,78 @@
-##Game Class
+#word = "super"
+## print the board blankly for the number of letters in the word
+#length_of_word = word.length 
+#board = Array.new(length_of_word, "-").join(" ")
+## have the user guess a letter 
+#guessed_letter = "s"
+#p word.include?(guessed_letter)
+## have the board update 
+#p letter_position = word.index(guessed_letter)
+#p board[letter_position] = guessed_letter
+#print board
 
-# setup a class for game 
-
-class WordGuess
-
-# set initialize method
-# initialize the word array
-# number of guesses
-# and if the game is comleted
- attr_accessor :word :used_letters :guess_count
- attr_writer :is_over
+class Game
+  attr_accessor :word, :used_letters, :guess_count, :total_guesses
+  attr_writer :is_over
+  
   def initialize( word )
-    @guess_count = 0
-    @is_over = false
     @word = word
+    @guess_count = 0
+    @total_guesses = @word.length
     @used_letters = []
-    @guesses_allowed = word.length
+    @is_over = false
+  end 
+
+  def blank_board
+    length_of_word = @word.length
     @board = Array.new(length_of_word, "-").join(" ")
   end
-# create a method that runs letters guessed by
-# the guesser
-  def is_used_letter( letter )
+
+  def board_update
+    letter_position = @word.index(letter)
+    @board[letter_position] = letter
+  end
+   
+   def is_used_letter
     @used_letters.include?( letter ) 
   end 
   
-  def is_letter_in_word( letter )
-    @word.include?( letter )
+  def is_letter_in_word
+    @word.include?(letter)
   end
-
-  def check_letter( letter )
-    if is_used_letter( letter )
-  #let them choose again
-    elsif is_letter_in_word( letter )
-
+  
+  def check_letter(letter)
+    
+    if is_used_letter
+      puts "Choose again"
+      letter = gets.chomp.downcase
+    
+    elsif is_letter_in_word
+      puts "You got one!"
+      board_update( letter )
+    
     else
       @used_letters << letter
   end 
-
-  def display_guess()
-
-
-
-
-  end 
+@guess_count += 1
+  end
+  def win_game
+    !board_update.include("-")
 end 
+end
+puts "GAME: WORD_GUESS!"
+puts "Enter a word for the guesser to figure out: "
+word = gets.chomp.downcase
+new_game = Game.new( word )
 
+until new_game.guess_count == new_game.total_guesses || new_game.win_game
+  puts new_game.board_update
 
+  print 'guess a letter: '
+  letter = gets.chomp.downcase
 
-
-# user interface 
-
-# print out the game name 
-puts 'Welcome to Word Guess!'
-game = WordGuess.new
-
-puts " Enter a word for the gusser to guess: "
-word = gest.chomp.downcase
-
-#until loop 
-until
-#ask user which letter they want to guess
-puts "What letter would you like to guess: "
- user_input = gets.chomp
-
-
-# check if letter is equal to the used_letter
-#chceck if the ther letter is eqaul to a letter
-#in the word
-# else it would be sotered in the used leters
-
-# check if the word has been soloved
-#or if the guesses have hit maximum amount
-# if game has been solved puts "good game you've won"
-# if user has guessed too many puts "sorry better luck next time"
-# else += 1 guess_count 
-#
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  if letter == ""
+    puts "Try again"
+  else
+    new_game.check_letter( letter )
+  end
+end 
