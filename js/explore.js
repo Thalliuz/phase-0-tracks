@@ -10,7 +10,7 @@ function reverse_string(string) {
   
   return string.split("").reverse().join("");
 }
-  if (1 == 1) {
+  if (1 == 1 && 2 == 2) {
     var blah = reverse_string
     console.log(blah("Sloths Are The Best"))
 }
