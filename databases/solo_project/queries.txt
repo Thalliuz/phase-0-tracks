@@ -1,0 +1,12 @@
+DISPLAY INFORMATION FROM A TABLE
+
+COMMAND:
+
+SELECT * FROM practice
+
+OUTPUT:
+
+1|Rose Medical|24 st south columbia
+2|MoMo Medical|123 ave NJ
+3|Lost Civ Med|1020 west Florida
+
