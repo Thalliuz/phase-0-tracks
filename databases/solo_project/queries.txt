@@ -10,3 +10,64 @@ OUTPUT:
 2|MoMo Medical|123 ave NJ
 3|Lost Civ Med|1020 west Florida
 
+UPDATE AN ITEM 
+
+COMMAND:
+
+UPDATE doctors
+SET name="MRS Sally"
+WHERE name="Sally";
+
+OUTPUT:
+
+1|John|Hellen jones|1
+2|MRS Sally|Bruce Wayne|2
+3|Kharm|phelange Regina|3
+
+
+DISPLAY THE INFORMATION FROM BOTH TABLES USING ONE QUERY
+
+COMMAND:
+
+SELECT * FROM doctors, practice;
+
+OUTPUT:
+
+1|John|Hellen jones|1|1|Rose Medical|24 st south columbia
+1|John|Hellen jones|1|2|MoMo Medical|123 ave NJ
+1|John|Hellen jones|1|3|Lost Civ Med|1020 west Florida
+2|MRS Sally|Bruce Wayne|2|1|Rose Medical|24 st south columbia
+2|MRS Sally|Bruce Wayne|2|2|MoMo Medical|123 ave NJ
+2|MRS Sally|Bruce Wayne|2|3|Lost Civ Med|1020 west Florida
+3|Kharm|phelange Regina|3|1|Rose Medical|24 st south columbia
+3|Kharm|phelange Regina|3|2|MoMo Medical|123 ave NJ
+3|Kharm|phelange Regina|3|3|Lost Civ Med|1020 west Florida 
+
+
+DISPLAY A NARROWER SELECTION OF COLUMNS
+
+COMMNAND:
+
+SELECT patients, location FROM doctors, practice;
+
+OUTPUT:
+
+Hellen jones|24 st south columbia
+Hellen jones|123 ave NJ
+Hellen jones|1020 west Florida
+Bruce Wayne|24 st south columbia
+Bruce Wayne|123 ave NJ
+Bruce Wayne|1020 west Florida
+phelange Regina|24 st south columbia
+phelange Regina|123 ave NJ
+phelange Regina|1020 west Florida
+
+
+COMMAND:
+
+DELETE FROM doctors WHERE name="MRS Sally";
+
+OUTPUT:
+
+1|John|Hellen jones|1
+3|Kharm|phelange Regina|3
