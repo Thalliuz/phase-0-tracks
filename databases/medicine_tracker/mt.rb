@@ -4,10 +4,10 @@ require 'sqlite3'
 # create SQLite3 database
 db = SQLite3::Database.new("medicine_tracker.db")
 
-# create each table: user_table, user_medication and meication
+# create each table: user, user_medication and meication
 
-# create user_table if it is not already made
-user_table = <<-SQL
+# create user if it is not already made
+user = <<-SQL
   CREATE TABLE IF NOT EXISTS user(
     id INTEGER PRIMARY KEY,
     name VARCHAR(255)
@@ -23,32 +23,40 @@ user_medication = <<-SQL
   )
 SQL
 
-medication_t = <<-SQL
+medication = <<-SQL
   CREATE TABLE IF NOT EXISTS medication(
     id INTEGER PRIMARY KEY,
-    medication VARCHAR(255)
+    med_name VARCHAR(255)
   )
 SQL
 
 
-# run the table creation
-db.execute(user_table)
-db.execute(user_medication)
-db.execute(medication_t)
+#select user id that you would like to add to 
 
 
-def add_user(db, name)
-  db.execute("INSERT INTO user (name) VALUES (?)", [name])
+def add_user(db)
+  puts 'Please enter your name: '
+  name = gets.chomp
+db.execute("INSERT INTO user (name) VALUES (?)", [name])
+
+puts " Welcome #{name}. "
 end
-add_user(db, "sally")
+
+#def add_user(db, name)
+#  db.execute("INSERT INTO user (name) VALUES (?)", [name])
+#end
 
 def add_medication(db, med_name)
-  db.execute("INSERT INTO medication_t (med_name) (?)", [med_name])
+ db.execute("INSERT INTO medication (med_name) VALUES (?)", [med_name])
 end
+
+
+# run the table creation
+db.execute(user)
+db.execute(user_medication)
+db.execute(medication)
+add_user(db)
 add_medication(db, "prescript")
-
-
-
 
 
 
@@ -62,3 +70,10 @@ add_medication(db, "prescript")
   #exit_manager = true
  # end 
 #end 
+
+  #if id == 1
+  #  id += 1
+  #else id == 1
+  #end 
+
+# db.execute("SELECT id FROM user WHERE name = (name)")
