@@ -31,8 +31,19 @@ medication = <<-SQL
 SQL
 
 
-#select user id that you would like to add to 
-
+# create check_user method to see if user data has been created
+def check_user(db)
+ value = db.execute("SELECT id FROM user")[0]
+  if value == nil
+    puts "No users detected. Follow the next instructions =D"
+    add_user(db)
+  else 
+    puts "Enter your user_id number: "
+    user_id = gets.to_i 
+    name = db.execute("SELECT name FROM user WHERE id == #{user_id}" )[0][0]
+    puts "#{name}"
+end 
+end 
 
 def add_user(db)
   puts 'Please enter your name: '
@@ -62,9 +73,9 @@ end
 db.execute(user)
 db.execute(user_medication)
 db.execute(medication)
-add_user(db)
+check_user(db)
+#add_user(db)
 add_medication(db)
-
 
 
 #exit_manager = false
