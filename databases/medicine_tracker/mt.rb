@@ -60,16 +60,9 @@ med_name = gets.chomp
 db.execute("INSERT INTO medication (med_name) VALUES (?)", [med_name])
 puts "You added #{med_name} to your medications."
 end 
-#def add_user(db, name)
-#  db.execute("INSERT INTO user (name) VALUES (?)", [name])
-#end
-
-#def add_medication(db, med_name)
-# db.execute("INSERT INTO medication (med_name) VALUES (?)", [#med_name])
-#end
 
 
-# run the table creation
+# run the table creation and methods
 db.execute(user)
 db.execute(user_medication)
 db.execute(medication)
@@ -78,6 +71,28 @@ check_user(db)
 add_medication(db)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+# Building Proccess 
+#def add_user(db, name)
+#  db.execute("INSERT INTO user (name) VALUES (?)", [name])
+#end
+
+#def add_medication(db, med_name)
+# db.execute("INSERT INTO medication (med_name) VALUES (?)", [#med_name])
+#end
+
+#EXTRA CODE I DIDN'T NEED
 #exit_manager = false
 
 #until exit_manager do 
@@ -93,4 +108,3 @@ add_medication(db)
   #  id += 1
   #else id == 1
   #end 
-
