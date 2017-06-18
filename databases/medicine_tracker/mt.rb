@@ -37,6 +37,7 @@ def check_user(db)
   if value == nil
     puts "No users detected. Follow the next instructions =D"
     add_user(db)
+    
   else 
     puts "Enter your user_id number: "
     user_id = gets.to_i 
